@@ -15,7 +15,7 @@ var map = [
 
 for (var i=0; i<map.length; i++) {
   for (var j=0; j<map[i].length; j++ ) {
-    if (Number(map[i][j])) {
+    if (Number(map[i][j]) || map[i][j] == 0) {
       if (nearSymbol(map, i, j)) {
         sum = sum + Number(getNumber(map, i, j));
       }
